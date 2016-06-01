@@ -1,5 +1,6 @@
 <ossec_config>
   <global>
+    <jsonout_output>yes</jsonout_output>
     <email_notification><%= @ossec_emailnotification %></email_notification>
     <% @ossec_emailto.each do |emailto| -%>
     <email_to><%= emailto %></email_to>
